@@ -1,0 +1,36 @@
+﻿body {
+    background-color: #259d34;
+    color: #d4ffda;
+    font-family: sans-serif;
+    padding:0;
+    margin:0;
+    padding-top:20px;
+    text-align:center;
+
+}
+
+h1{
+    font-size: 5em;
+    padding:0;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+#entry{
+    background-color:#195e21;
+    box-shadow: 0px 0px 10px #0f3c14;
+    height:auto;
+    margin:10px;
+    padding:10px;
+}
+
+.projectImage{
+    width:60%;
+}
