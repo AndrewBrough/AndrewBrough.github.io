@@ -3,9 +3,9 @@
 <head>
   <title>Welcome|Andrew Brough</title>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,700,300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="main2.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
   <script src="jquery-2.1.3.min.js"></script>
-  <script src="main2.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -18,55 +18,100 @@
 -->
 
   <div class="content">
-    <h1>Andrew Brough</h1>
+    <h1 id="top">Andrew Brough</h1>
     <div class="coverImage">
       <img src="img/AndrewBrough-cropped.jpg" />
     </div>
-    <p>I'm a passionate and driven young developer and designer who is fueled by innovation and unique projects. I love working alongside knowledgeable creatives and aim for the highest standards in everything I do. I code, design and create art for my own games and web projects in my free time, and love to tackle a new challenge. Throwing ideas at the wall and seeing what sticks is my forte, and I always have something to contribute in creative discussions. I'm interested in all things related to the fusion of design, user experience, software and hardware.</p>
+    <p>With chops in both development and design, I understand both sides of digital product production. I can code with C#, C++, Java, JavaScript and am always learning new languages and strategies. I also design my own assets with Photoshop and Illustrator.</p>
 
+    <!-- NAVIGATION -->
     <h2>Projects</h2>
-    
-    <div class="project">
+    <div id="projectTags">
+      <ul>
+        <li id="unannouncedmagmicNAV">Unannounced Title for iOS</li>
+        <li id="applesNAV">Apples to Apples</li>
+        <li id="phase10facebookNAV">Phase 10 Facebook</li>
+        <li id="ottawajsNAV">OttawaJS Presentation</li>
+        <li id="liftoffNAV">Liftoff</li>
+        <li id="hyperionNAV">Hyperion</li>
+        <li id="gameneedsnameNAV">This Game Needs A Name_</li>
+        <li id="sloesiteNAV">Sustainable Living Ottawa East Website</li>
+      </ul>
+    </div>
+
+    <div id="backToTop">Back To Top</div>
+
+    <!-- UNANNOUNCED WITH MAGMIC -->
+    <div class="project" id="unannouncedmagmicPROJ">
+      <h3>Unannounced Title for iOS</h3>
+      <p> I spent 5 months working on a yet-unveiled title with Magmic inc. Developed in Unity3D with C#, I helped create a full featured iOS game along with 2 other developers. Although I can't say much yet, I can say it is a visual feast and I’m very excited to show more when it launches!</p>
+    </div>
+
+    <!-- APPLES TO APPLES -->
+    <div class="project" id="applesPROJ">
       <h3>Apples to Apples</h3>
       <img src="http://a2.mzstatic.com/us/r30/Purple1/v4/b5/2e/ad/b52ead75-875d-738b-5ee8-ca6b047efec9/screen640x640.jpeg"/>
-      <p>Apples to Apples is a freemium game for iOS licensed by Mattel and Developed by Magmic inc. which features live online play with Facebook friends. I worked as a gameplay and audio developer until the launch of the project in April 2015.</p>
+      <p>Apples to Apples is a freemium game for iOS licensed by Mattel and Developed by Magmic inc. which features live online play with Facebook friends, ranking, progression and achievements. I worked as a gameplay/feature developer until the launch of the project in May 2015.</p>
       <a href="https://itunes.apple.com/ca/app/id922296403">App Store</a>
     </div>
-    
-    <div class="project">
-      <h3>Unannounced Title with Magmic</h3>
-      <p> I spend 5 months working on a yet-unveiled title with Magmic inc. Developed in Unity3D with C#, I helped create a full featured iOS game along with 2 other developers. When I can reveal more about the game, I will add more information!</p>
-    </div>
-    
-    <div class="project">
-      <h3>Hyperion</h3>
-      <img src="img\projects\SP_ProjectMidnight/projectmidnight_thumbnail.jpg" />
-      <p>
-        Light is your only friend as you try to make your way off of an abandoned space cruiser. Facing your choice of fear, you, the Stowaway, must find your path through the ship. If you stray too far away from light, you will be consumed by darkness. By providing power to portions of the ship and using a lantern to guide your way, you solve puzzles to pass through the ship's unique areas. You hear alarming noises, bumps and bangs as you travel across the ship. You quickly learn that there is also a monster aboard the ship, which stalks you. As you struggle with facing your fears, you struggle with keeping your sanity as you begin to hallucinate shadowy figures. When you learn that the ship is doomed to crash into a nearby planet, you must find a way off the ship, stay alive and avoid the lurking monster...
-      </p>
-      <p>
-        Midnight is an FPS game built in Unity using C# by my team of 5 students at Carleton University in the Interactive Multimedia and Design program. It is our senior project for which the project timeline is one entire year. The team includes myself, Eva Demers-Brett, Wilhelm Johannes Steyn, Curtis Field and Kat Phuon-Nguyen. The team is structured to utilise two main artists (Hannes and Curtis), one lead programmer (Eva), one assisting programmer (Kat) and one lead designer (Myself), and I also assist with programming.
-      </p>
-      <a href="https://github.com/AndrewBrough/projectmidnight">Github</a>
+
+    <!-- PHASE 10 FACEBOOK -->
+    <div class="project" id="phase10facebookPROJ">
+      <h3>Phase 10 Facebook</h3>
+      <img src="img/projects/Phase 10 Facebook/Screenshot1b.png" />
+      <img src="img/projects/Phase 10 Facebook/Screenshot2.png" />
+      <p>A card game licensed by Mattel developed in Flash with ActionScript, you play rounds of trying to complete different card “phases” like runs and sets. I worked on feature development, UI implementation, optimization and bug fixing with 2 other developers at Magmic inc.</p>
+      <a href="https://www.facebook.com/Phase10Game">Play it here</a><br />
+      <a href="http://www.magmic.com/phase-10-facebook/">Phase 10 Facebook's website</a>
     </div>
 
-    <div class="project">
-      <h3 id="gameNeedsName">This Game Needs A Name</h3>
+    <!-- OttawaJS Presentation -->
+    <div class="project" id="ottawajsPROJ">
+      <h3>OttawaJS Presentation</h3>
+      <p>I prepared a talk with Bethany Dunfield on how to build a game engine for HTML5 which we presented at the August OttawaJS meetup in 2014. We created our own engine and prepared demos of 5 steps of the process which we explained and demoed live. The engine covers basic a basic game engine including rendering, updating and player, enemy and world creation. It was very well received and we were even invited to present at future OttawaJS meetups!</p>
+      <a href="https://github.com/brdunfield/OttawaJSAug14">Github Repository</a>
+    </div>
+
+    <!-- LIFTOFF -->
+    <div class="project" id="liftoffPROJ">
+      <h3>Liftoff</h3>
+      <img src="img/projects/Liftoff/liftoff1.png" />
+      <img src="img/projects/Liftoff/liftoff2.png" />
+      <p>A 2D exploration and gathering game for the desktop browser made for HTML5 that was made for the Global Game Jam 2015 in January. It was coded entirely with JavaScript using a custom engine built during the jam.</p>
+      <a href="http://andrewbrough.ca/Liftoff/">Play it here</a><br />
+      <a href="https://github.com/rydrman/liftoff">Github Repository</a>
+    </div>
+
+    <!-- HYPERION SENIOR PROJECT -->
+    <div class="project" id="hyperionPROJ">
+      <h3>Hyperion</h3>
+      <img src="img/projects/SP_ProjectMidnight/hyperion1.png" />
+      <img src="img/projects/SP_ProjectMidnight/hyperion3.png" />
+      <img src="img/projects/SP_ProjectMidnight/Hyperion 3D Model Monster.jpg" />
+      <img src="img/projects/SP_ProjectMidnight/Hyperion Poster.png" />
+      <p>A Unity3D horror puzzle game made by myself and 4 teammates, you explore an abandoned space cruise liner and discover it’s secrets. Coded with C# from the ground up, we worked tightly for close to a year on our senior project for Interactive Multimedia and Design at Carleton University.</p>
+      <a href="https://github.com/AndrewBrough/projectmidnight">Github</a><br />
+      <a href="https://www.youtube.com/watch?v=Rm1E3iObdSk">Youtube Trailer</a>
+    </div>
+
+    <!-- THIS GAME NEEDS A NAME_ -->
+    <div class="project" id="gameneedsnamePROJ">
+      <h3 id="gameNeedsName">This Game Needs a Name</h3>
       <img src="img/projects/GGJ_2014/GGJ2014_gameneedsname_title.png">
       <img src="img/projects/GGJ_2014/GGJ2014_gameneedsname.png">
-      <p>For Global Game Jam 2014, I joined a team with my girlfriend, Bethany Dunfield, and Ryan Bottriell, two coders I've known for a few years now. The challenge: make a game for web, completely procedurally, with no assets at all. We made This Game Needs A Name_. I know what you're thinking - how uncreative! The player is actually asked to enter a name for the game as a way to seed the random level and character generation. It's a side scrolling game where you have to jump over spikes, shoot enemies or use your shield to protect yourself. However, anytime you do an action, it drains your colour (rgb values in the top right corner), so be careful when pressing buttons. The colour is also reflected in the world, and you'll see as you use up all your red, the world only shows the green and blue hues.
-      </p>
-      <p>We had a lot of fun making it, and though we hit a few snags along the way, we managed to finish the game by the 48 Hour deadline.
-      </p>
-      <a href="http://ugrad.bitdegree.ca/~andrewbrough/GGJ2014/menu.html">Play it here</a>
-      <br />
-      <a href="http://globalgamejam.org/2014/games/game-needs-name"> GGJ2014 site</a>
+      <p>A 100% procedural game that uses the name you enter for the game and your character to generate the world and players. Made for the browser with JavaScript, we designed a side scrolling endless runner game where you control the constantly changing environment by using different powers. You can jump, shoot and use a shield, each which consume a power which is associated with a colour. When you consume a colour, the colour is drained from the background, when you save energy, colour is added to the background. The terrain, characters and textures are all generated algorithmically and do not use any image assets, making the game extremely fast to load (125 KB). Made with a team of 3 including myself during the 2014 Global Game Jam in January.</p>
+      <a href="http://ugrad.bitdegree.ca/~andrewbrough/GGJ2014/menu.html">Play it here</a><br />
+      <a href="https://github.com/brdunfield/GGJ2014">Github Repository</a><br />
+      <a href="http://globalgamejam.org/2014/games/game-needs-name">GGJ2014 This Game Needs a Name website</a>
+    </div>
+
+    <div class="project" id="sloesitePROJ">
+      <h3 id="sloesite">Sustainable Living Ottawa East Infographic Website</h3>
+      <img src="img/projects/COMM_SLOE/sloe-thumbnail.jpg" />
+      <p>An infographic site which presents a high level introduction to the Sustainable Living Ottawa East organization including their goals and projects. It was created as a project for my communications class during my time at Carleton University, where we met with the client a handful of times to discuss their desires and goals for the site. The result was a high fidelity, modern site with large images and animations. We created the site using JavaScript and Ruby.</p>
+      <a href="http://ugrad.bitdegree.ca/~andrewbrough/sloe/">Infographic Website</a><br />
+      <a href="http://sustainablelivingottawaeast.ca/">Sustainable Living Ottawa East Website</a>
     </div>
   </div>
-
-
-  <footer>
-    <a href="#top">Back to top</a>
-  </footer>
 </body>
 </html>
