@@ -1,4 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light, dark --default;
+    themes: andrewbrough --default;
+}
+
+@import "./styles/theme.css";
+
+@layer base {
+    :root {
+        --theme: andrewbrough;
+    }
 }

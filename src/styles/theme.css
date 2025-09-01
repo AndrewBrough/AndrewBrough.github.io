@@ -1,0 +1,35 @@
+
+@plugin "daisyui/theme" {
+  name: "andrewbrough";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(13% 0.028 261.692);
+  --color-base-200: oklch(21% 0.034 264.665);
+  --color-base-300: oklch(27% 0.033 256.848);
+  --color-base-content: oklch(92% 0.006 264.531);
+  --color-primary: oklch(37% 0.146 265.522);
+  --color-primary-content: oklch(92% 0.006 264.531);
+  --color-secondary: oklch(92% 0.006 264.531);
+  --color-secondary-content: oklch(13% 0.028 261.692);
+  --color-accent: oklch(70% 0.213 47.604);
+  --color-accent-content: oklch(98% 0.016 73.684);
+  --color-neutral: oklch(92% 0.006 264.531);
+  --color-neutral-content: oklch(13% 0.028 261.692);
+  --color-info: oklch(60% 0.126 221.723);
+  --color-info-content: oklch(98% 0.019 200.873);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(66% 0.179 58.318);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(64% 0.246 16.439);
+  --color-error-content: oklch(96% 0.015 12.422);
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 2rem;
+  --size-selector: 0.28125rem;
+  --size-field: 0.28125rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
