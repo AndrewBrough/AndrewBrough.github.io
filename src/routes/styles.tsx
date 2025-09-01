@@ -1,4 +1,4 @@
-import { Styles } from "@/pages/Styles";
+import { StylesPage } from "@/pages/StylesPage";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/styles")({
@@ -6,5 +6,5 @@ export const Route = createFileRoute("/styles")({
 });
 
 function RouteComponent() {
-  return <Styles />;
+  return <StylesPage />;
 }

@@ -1,6 +1,6 @@
 import { HeartIcon, HomeIcon, StarIcon } from "lucide-react";
 
-export const Styles = () => {
+export const StylesPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen ">
       <h1 className="text-4xl font-bold mb-4">Main</h1>
