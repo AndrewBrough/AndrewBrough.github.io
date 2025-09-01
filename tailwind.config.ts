@@ -5,14 +5,14 @@ export const config: TailwindConfig & DaisyConfig = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"]
-      }
-    }
+        sans: ["Roboto", "sans-serif"],
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["light", "dark"]
-  }
+    themes: ["dark", "light"],
+  },
 };
 
 export const tailwindConfig = config;

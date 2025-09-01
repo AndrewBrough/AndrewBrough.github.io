@@ -2,9 +2,9 @@ import { HeartIcon, HomeIcon, StarIcon } from "lucide-react";
 
 export const Styles = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">Main</h1>
-      <p className="text-lg text-gray-600 mb-6">Testing Roboto font</p>
+    <div className="flex flex-col items-center justify-center h-screen ">
+      <h1 className="text-4xl font-bold mb-4">Main</h1>
+      <p className="text-lg mb-6">Testing Roboto font</p>
       <div className="flex items-center gap-4">
         <HomeIcon className="text-3xl text-blue-500" />
         <HeartIcon className="text-3xl text-red-500" />
