@@ -18,7 +18,7 @@ export default defineConfig({
       overlay: false,
       eslint: {
         useFlatConfig: true,
-        lintCommand: "lint:fix"
+        lintCommand: "eslint src/**/*.ts*"
       }
     })
   ]
