@@ -1,3 +1,19 @@
+# Updating the site
+
+[andrewbrough.github.io](https://andrewbrough.github.io) is this repo, published with GitHub Pages. Pages serves the production build, not the Vite source. A push to `master` runs the deploy workflow, which builds the app and publishes it.
+
+To update the live site:
+
+1. Run `npm install`, then `npm run start`, and check the site at http://localhost:3000.
+2. Commit your changes.
+3. Push to `master`:
+
+```bash
+git push origin master
+```
+
+Watch the run in the Actions tab. The live site usually updates within a couple of minutes. GitHub may cache the previous version for up to 10 minutes.
+
 Welcome to your new TanStack app! 
 
 # Getting Started
