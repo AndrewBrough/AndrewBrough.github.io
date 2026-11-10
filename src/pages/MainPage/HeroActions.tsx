@@ -16,7 +16,7 @@ export const HeroActions = () => (
       View My Work
     </a>
     <a
-      href="/Resume%202023%20Developer.md"
+      href="/Andrew%20Brough%202026%20Resume.md"
       download
       className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
     >
