@@ -2,7 +2,7 @@ import portrait from "@/assets/portrait.png";
 
 export const PortraitCard = () => (
   <div className="hidden md:flex justify-end">
-    <div className="h-44 w-44 rounded-2xl border border-neutral-800 bg-neutral-900/60 overflow-hidden">
+    <div className="h-60 w-60 rounded-2xl border border-neutral-800 bg-neutral-900/60 overflow-hidden">
       <img
         src={portrait}
         alt="Andrew Brough"
