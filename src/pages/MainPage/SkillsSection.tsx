@@ -1,6 +1,6 @@
 export const SkillsSection = () => (
-  <div className="mt-10 border-t border-neutral-800/80 pt-6">
-    <p className="text-sm text-neutral-400">Specialized in</p>
+  <div className="my-8 border-t border-neutral-800/80 pt-4">
+    <h2 className="mt-4 text-2xl md:text-3xl font-semibold tracking-tight text-neutral-50">Specializations</h2>
     <ul className="mt-4 flex flex-wrap gap-2">
       {skills.map(skill => (
         <li
