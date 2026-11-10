@@ -12,7 +12,7 @@ export const ExperienceEntry = ({ experience }: ExperienceEntryProps) => {
   return (
     <li className="flex flex-col items-start gap-6 md:flex-row md:gap-10">
       <div className="min-w-0 flex-1">
-        <div className="font-medium text-neutral-200">{experience.company}</div>
+        <h3 className="text-xl font-semibold text-neutral-50">{experience.company}</h3>
         {hasMultipleRoles ? (
           <div className="mt-4 space-y-5">
             {experience.roles.map(role => (

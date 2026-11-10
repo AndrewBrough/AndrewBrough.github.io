@@ -1,10 +1,18 @@
 import { MapPin } from "lucide-react";
+import portrait from "@/assets/portrait.png";
 
 export const HeroText = () => (
   <div>
-    <h1 className="mt-6 text-4xl md:text-5xl font-semibold tracking-tight text-neutral-50">
-      Andrew Brough
-    </h1>
+    <div className="flex flex-row gap-4 justify-between items-center">
+      <h1 className="mt-6 text-4xl md:text-5xl font-semibold tracking-tight text-neutral-50">
+        Andrew Brough
+      </h1>
+      <img
+          src={portrait}
+          alt="Andrew Brough"
+          className="h-32 w-32 rounded-full md:hidden"
+        />
+    </div>
     <p className="mt-3 text-neutral-300">
       Senior Frontend Developer with 11 years building customer-facing web
       applications in React and TypeScript. I lead architecture and migrations,

@@ -1,7 +1,7 @@
 import { Download, Mail } from "lucide-react";
 
 export const HeroActions = () => (
-  <div className="mt-8 flex flex-wrap gap-3">
+  <div className="mt-4 flex flex-wrap gap-3">
     <a
       href="mailto:andrew.jm.brough@gmail.com"
       className="inline-flex items-center gap-2 rounded-xl bg-neutral-100 text-neutral-900 px-4 py-2 font-medium hover:bg-white transition-colors"
