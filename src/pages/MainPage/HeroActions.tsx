@@ -1,4 +1,4 @@
-import { Download, Mail } from "lucide-react";
+import { Download, Linkedin, Mail } from "lucide-react";
 
 export const HeroActions = () => (
   <div className="mt-4 flex flex-wrap gap-3">
@@ -8,6 +8,15 @@ export const HeroActions = () => (
     >
       <Mail className="h-4 w-4" />
       Let's Work Together
+    </a>
+    <a
+      href="https://www.linkedin.com/in/andrewjbrough/"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
+    >
+      <Linkedin className="h-4 w-4" />
+      LinkedIn Profile
     </a>
     <a
       href="#experience"
