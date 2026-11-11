@@ -1,4 +1,4 @@
-import { Download, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 export const HeroActions = () => (
   <div className="mt-4 flex flex-wrap gap-3">
@@ -19,14 +19,23 @@ export const HeroActions = () => (
       LinkedIn Profile
     </a>
     <a
+      href="https://github.com/AndrewBrough"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
+    >
+      <Github className="h-4 w-4" />
+      GitHub Profile
+    </a>
+    <a
       href="#experience"
       className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
     >
       View My Work
     </a>
     <a
-      href="/Andrew%20Brough%202026%20Resume.md"
-      download
+      href="/Andrew%20Brough%20Resume%202026.pdf"
+      download="Andrew Brough Resume 2026.pdf"
       className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
     >
       <Download className="h-4 w-4" />
