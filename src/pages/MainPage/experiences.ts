@@ -102,45 +102,28 @@ export const experiences: ExperienceItem[] = [
       },
     ],
   },
+];
+
+export type EarlierExperienceItem = {
+  company: string;
+  title: string;
+  duration: string;
+};
+
+export const earlierExperiences: EarlierExperienceItem[] = [
   {
     company: "Thinkwrap Solutions",
-    roles: [
-      {
-        title: "UI Integration Specialist",
-        duration: "2015–2017",
-        highlights: [
-          "Built Oracle e-commerce storefronts for Sporting Life, Princess Auto, and Woolrich",
-        ],
-      },
-    ],
-    images: [],
+    title: "UI Integration Specialist",
+    duration: "2015–2017",
   },
   {
     company: "Magmic Games",
-    roles: [
-      {
-        title: "Gameplay Programmer",
-        duration: "2014–2015",
-        highlights: [
-          "Shipped mobile game features for Mattel titles including Skip-Bo and Phase 10",
-          "Supported iOS and Android release pipelines with Jenkins",
-        ],
-      },
-    ],
-    images: [],
+    title: "Gameplay Programmer",
+    duration: "2014–2015",
   },
   {
     company: "Canada Computers",
-    roles: [
-      {
-        title: "PC Hardware Sales",
-        duration: "2011–2014, part-time",
-        highlights: [
-          "Sold PC hardware and designed custom PC build specifications",
-          "Helped new and repeat clients select hardware for custom computers and network solutions",
-        ],
-      },
-    ],
-    images: [],
+    title: "PC Hardware Sales",
+    duration: "2011–2014, part-time",
   },
 ];

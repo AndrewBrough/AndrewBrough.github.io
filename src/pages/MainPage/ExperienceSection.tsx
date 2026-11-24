@@ -1,5 +1,5 @@
 import { ExperienceEntry } from "./ExperienceEntry";
-import { experiences } from "./experiences";
+import { earlierExperiences, experiences } from "./experiences";
 
 export const ExperienceSection = () => (
   <div id="experience" className="my-8 border-t border-neutral-800/80 pt-4">
@@ -10,6 +10,18 @@ export const ExperienceSection = () => (
           key={experience.company}
           experience={experience}
         />
+      ))}
+    </ul>
+    <h3 className="mt-10 text-xl font-semibold text-neutral-50">Earlier experience</h3>
+    <ul className="mt-3 space-y-2 text-sm">
+      {earlierExperiences.map(item => (
+        <li key={item.company}>
+          <span className="font-medium text-neutral-300">{item.company}</span>
+          <span className="text-neutral-400">
+            {" · "}
+            {item.title} ({item.duration})
+          </span>
+        </li>
       ))}
     </ul>
   </div>
