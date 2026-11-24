@@ -1,4 +1,5 @@
 import { ExperienceSection } from "./ExperienceSection";
+import { HobbiesSection } from "./HobbiesSection";
 import { HeroActions } from "./HeroActions";
 import { HeroText } from "./HeroText";
 import { PortraitCard } from "./PortraitCard";
@@ -16,6 +17,7 @@ export const Intro = () => {
             <HeroActions />
             <SkillsSection />
             <ExperienceSection />
+            <HobbiesSection />
           </div>
       </div>
     </section>
