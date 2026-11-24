@@ -11,6 +11,7 @@ export type ExperienceImage = {
 
 export type ExperienceItem = {
   company: string;
+  description?: string;
   roles: ExperienceRole[];
   images: ExperienceImage[];
 };
@@ -18,6 +19,8 @@ export type ExperienceItem = {
 export const experiences: ExperienceItem[] = [
   {
     company: "Kahi",
+    description:
+      "Remote job site monitoring for construction, using wireless sensors to track conditions like temperature and humidity.",
     roles: [
       {
         title: "Senior Web Developer",
@@ -42,6 +45,8 @@ export const experiences: ExperienceItem[] = [
   },
   {
     company: "Fullscript",
+    description:
+      "A health care platform that helps practitioners recommend supplements, order lab tests, and manage patient treatment plans.",
     roles: [
       {
         title: "Senior UX Engineer",
