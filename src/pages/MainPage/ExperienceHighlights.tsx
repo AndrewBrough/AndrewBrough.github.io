@@ -5,12 +5,9 @@ export type ExperienceHighlightsProps = {
 export const ExperienceHighlights = ({
   highlights,
 }: ExperienceHighlightsProps) => (
-  <ul className="mt-2 space-y-1 text-sm text-neutral-400">
+  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-400">
     {highlights.map(highlight => (
-      <li key={highlight} className="flex gap-2">
-        <span aria-hidden="true">–</span>
-        <span>{highlight}</span>
-      </li>
+      <li key={highlight}>{highlight}</li>
     ))}
   </ul>
 );
