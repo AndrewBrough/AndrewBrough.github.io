@@ -46,7 +46,7 @@ export const experiences: ExperienceItem[] = [
   {
     company: "Fullscript",
     description:
-      "A health care platform that helps practitioners recommend supplements, order lab tests, and manage patient treatment plans.",
+      "A health care platform that helps practitioners recommend supplements, order lab tests, and manage patient treatment plans. Patients can order their supplements online and have them delivered to their doorstep within days.",
     roles: [
       {
         title: "Senior UX Engineer",
