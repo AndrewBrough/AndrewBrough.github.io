@@ -33,9 +33,12 @@ export const ExperienceEntry = ({ experience }: ExperienceEntryProps) => {
         ) : (
           experience.roles.map(role => (
             <div key={role.title}>
-              <div className="text-sm text-neutral-400">
-                {role.title} ({role.duration})
-              </div>
+              <h3 className="text-sm font-medium text-neutral-300">
+                {role.title}{" "}
+                <span className="font-normal text-neutral-400">
+                  ({role.duration})
+                </span>
+              </h3>
               <ExperienceHighlights highlights={role.highlights} />
             </div>
           ))
