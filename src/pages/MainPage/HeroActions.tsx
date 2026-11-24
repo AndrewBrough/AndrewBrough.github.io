@@ -16,7 +16,7 @@ export const HeroActions = () => (
       className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
     >
       <Linkedin className="h-4 w-4" />
-      LinkedIn Profile
+      LinkedIn
     </a>
     <a
       href="https://github.com/AndrewBrough"
@@ -25,7 +25,7 @@ export const HeroActions = () => (
       className="inline-flex items-center gap-2 rounded-xl border border-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-900 transition-colors"
     >
       <Github className="h-4 w-4" />
-      GitHub Profile
+      GitHub
     </a>
     <a
       href="#experience"
