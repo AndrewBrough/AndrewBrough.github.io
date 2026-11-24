@@ -129,4 +129,18 @@ export const experiences: ExperienceItem[] = [
     ],
     images: [],
   },
+  {
+    company: "Canada Computers",
+    roles: [
+      {
+        title: "PC Hardware Sales",
+        duration: "2011–2014, part-time",
+        highlights: [
+          "Sold PC hardware and designed custom PC build specifications",
+          "Helped new and repeat clients select hardware for custom computers and network solutions",
+        ],
+      },
+    ],
+    images: [],
+  },
 ];
