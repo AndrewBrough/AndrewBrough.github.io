@@ -9,7 +9,7 @@ export const HeroText = () => (
           Andrew Brough
         </h1>
         <p className="mt-2 text-lg text-neutral-300">
-          Senior Frontend Developer &amp; Technical Lead
+          Senior Fullstack Developer &amp; Technical Lead
         </p>
       </div>
       <img
@@ -20,7 +20,8 @@ export const HeroText = () => (
     </div>
     <p className="mt-5 text-neutral-200">
       I build tools that change how people work. For 11 years I&apos;ve designed
-      and shipped customer-facing web applications in React and TypeScript, from
+      and shipped customer-facing web applications in React, TypeScript, and Ruby on
+      Rails, from
       a health care platform connecting practitioners and patients to live IoT
       monitoring for construction sites. I lead architecture, migrations, and
       teams, and I measure success by what changes for the people using the
