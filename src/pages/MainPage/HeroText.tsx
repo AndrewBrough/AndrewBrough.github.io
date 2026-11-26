@@ -20,18 +20,11 @@ export const HeroText = () => (
     </div>
     <p className="mt-5 text-neutral-200">
       I build tools that change how people work. For 11 years I&apos;ve designed
-      and shipped customer-facing web applications in React, TypeScript, and Ruby on
-      Rails, from
-      a health care platform connecting practitioners and patients to live IoT
+      and shipped customer-facing web applications in React, TypeScript, and Ruby
+      on Rails, from a health care platform connecting practitioners and patients to live IoT
       monitoring for construction sites. I lead architecture, migrations, and
       teams, and I measure success by what changes for the people using the
       software.
-    </p>
-    <p className="mt-3 text-neutral-400">
-      I&apos;ve seen what slows good work down: legacy systems, misaligned
-      priorities, and process for its own sake. I bring clear direction, honest
-      communication, and a bias for shipping, so teams spend their energy on the
-      problem instead of the friction around it.
     </p>
     <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
       <span className="inline-flex items-center gap-2 text-neutral-200">
