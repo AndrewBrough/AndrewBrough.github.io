@@ -24,11 +24,14 @@ export const experiences: ExperienceItem[] = [
     roles: [
       {
         title: "Senior Web Developer",
-        duration: "2024–present",
+        duration: "Jan 2024 – Present",
         highlights: [
-          "Migrating a reporting app from Angular to React with incremental releases",
-          "Hired and led a frontend team of three, including planning and schedules",
-          "Managing GitLab CI/CD across React, Angular, Vue, and Rails services",
+          "Leading the migration of a legacy Angular app to React for live temperature, humidity, and GPS sensor monitoring",
+          "Built and deployed a Next.js microservice for internal customer support and feedback management",
+          "Upgraded GitLab pipelines across 4+ web apps (Vue, React, HTML, Angular), adding staging and review environments",
+          "Wrote Ruby on Rails API endpoints backed by AWS DynamoDB and PostgreSQL on EC2",
+          "Mocked static and live hardware APIs with Mock Service Worker for frontend testing",
+          "Interviewed and grew the frontend team from 1 to 3 developers",
         ],
       },
     ],
@@ -50,20 +53,21 @@ export const experiences: ExperienceItem[] = [
     roles: [
       {
         title: "Senior UX Engineer",
-        duration: "2021–2023",
+        duration: "Oct 2021 – Dec 2023",
         highlights: [
-          "Shipped features with product and platform teams and advised on legacy systems",
-          "Mentored junior, intermediate, and senior developers",
-          "Part-time team lead for timelines, milestones, and updates to leadership",
+          "Ran an internal mentorship program for junior, intermediate, and new senior developers",
+          "Team lead for short-term projects, including automated practitioner tax forms and advanced practitioner-patient messaging",
+          "Led interviews for junior through lead roles, helping grow frontend from 3 to 20+ developers in an 80+ person engineering department",
+          "Reviewed and wrote GitLab CI/CD, Helm, Docker, and Kubernetes configs for staging and production",
         ],
       },
       {
         title: "Web Developer",
-        duration: "2018–2021",
+        duration: "Oct 2018 – Oct 2021",
         highlights: [
-          "Migrated a Rails and Angular app into a new React single-page application",
-          "Helped scale frontend from 4 engineers to 30+ across six product teams",
-          "Set up GitLab pipelines, Git Flow, and Agile delivery for a growing team",
+          "Migrated an Angular and Ruby on Rails app to a modern React SPA serving medical, non-medical, and patient users",
+          "Built e-commerce features for supplements and wellness services: product pages, search, browsing, and Black Friday promotions",
+          "Developed practitioner prescription tools, including patient messaging, wellness plans, and product prescriptions",
         ],
       },
     ],
@@ -83,11 +87,13 @@ export const experiences: ExperienceItem[] = [
     roles: [
       {
         title: "Web Developer",
-        duration: "2017–2018",
+        duration: "Jul 2017 – Oct 2018",
         highlights: [
-          "Built a live IoT monitoring app for the Raven smart dash camera",
-          "Shaped APIs and device sensor data structures with the backend team",
-          "Refined requirements with leadership, marketing, and operations",
+          "Solo-built the web app for the Raven smart dash camera, with live video, GPS, speed, and vehicle diagnostics",
+          "Map-based fleet dashboard with live dashcam footage, GPS, and statistics",
+          "Trip history with map routes, dashcam previews, video archives, timelapses, and OBD stats",
+          "JWT authentication from the AWS backend, with features based on user roles and permissions",
+          "Built all user-facing emails and created graphics and animations for Raven hardware and marketing",
         ],
       },
     ],
@@ -102,6 +108,35 @@ export const experiences: ExperienceItem[] = [
       },
     ],
   },
+  {
+    company: "Thinkwrap Solutions",
+    roles: [
+      {
+        title: "UI Integration Specialist",
+        duration: "2015 – 2017",
+        highlights: [
+          "Built Oracle e-commerce storefronts for Sporting Life, Princess Auto, and Woolrich",
+          "Integrated product details and business logic into product, search, home, and seasonal promotion pages",
+          "Built on-site widgets in Angular and React: search filters, quick view, store locators, and surveys",
+          "Integrated e-commerce emails for orders, receipts, shipping, and promotions",
+        ],
+      },
+    ],
+    images: [],
+  },
+  {
+    company: "Magmic Games",
+    roles: [
+      {
+        title: "Gameplay Programmer",
+        duration: "2014 – 2015",
+        highlights: [
+          "Developed mobile games for Mattel titles including Skip-Bo, Phase 10, and Apples to Apples",
+        ],
+      },
+    ],
+    images: [],
+  },
 ];
 
 export type EarlierExperienceItem = {
@@ -112,18 +147,13 @@ export type EarlierExperienceItem = {
 
 export const earlierExperiences: EarlierExperienceItem[] = [
   {
-    company: "Thinkwrap Solutions",
-    title: "UI Integration Specialist",
-    duration: "2015–2017",
-  },
-  {
-    company: "Magmic Games",
-    title: "Gameplay Programmer",
-    duration: "2014–2015",
+    company: "Federation for the Humanities & Social Sciences",
+    title: "Web & Media Designer",
+    duration: "Summer 2013",
   },
   {
     company: "Canada Computers",
-    title: "PC Hardware Sales",
-    duration: "2011–2014, part-time",
+    title: "PC Hardware Sales Representative",
+    duration: "May 2011 – Sept 2012",
   },
 ];

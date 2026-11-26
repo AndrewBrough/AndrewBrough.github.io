@@ -12,7 +12,7 @@ export const ExperienceSection = () => (
         />
       ))}
     </ul>
-    <h3 className="mt-10 text-xl font-semibold text-neutral-50">Earlier experience</h3>
+    <h3 className="mt-10 text-xl font-semibold text-neutral-50">Earlier work experience</h3>
     <ul className="mt-3 space-y-2 text-sm">
       {earlierExperiences.map(item => (
         <li key={item.company}>
