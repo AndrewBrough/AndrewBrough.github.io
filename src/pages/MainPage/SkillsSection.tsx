@@ -1,3 +1,6 @@
+import { ChevronDown } from "lucide-react";
+import { useId, useState } from "react";
+
 type SkillGroup = {
   name: string;
   skills: string[];
@@ -10,9 +13,11 @@ const keySkills: string[] = [
   "Legacy Modernization",
   "TypeScript",
   "React",
+  "Node.js",
+  "Next.js",
   "Ruby on Rails",
-  "AWS",
-  "Claude Code",
+  "GitLab CI/CD",
+  "Unity",
 ];
 
 const skillGroups: SkillGroup[] = [
@@ -24,7 +29,6 @@ const skillGroups: SkillGroup[] = [
       "HTML",
       "CSS",
       "JavaScript",
-      "Next.js",
       "Angular",
       "Vue",
       "Webpack",
@@ -44,7 +48,6 @@ const skillGroups: SkillGroup[] = [
     name: "Backend",
     skills: [
       "REST API Development",
-      "Node.js",
       "Python",
       "PHP",
       "Java",
@@ -52,6 +55,7 @@ const skillGroups: SkillGroup[] = [
       "MySQL",
       "PostgreSQL",
       "NoSQL",
+      "AWS",
       "MQTT",
     ],
   },
@@ -71,7 +75,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     name: "DevOps",
-    skills: ["GitLab CI/CD", "Docker", "Kubernetes", "Netlify", "Git Flow", "Jenkins"],
+    skills: ["Docker", "Kubernetes", "Netlify", "Git Flow", "Jenkins"],
   },
   {
     name: "UX & Design",
@@ -93,45 +97,74 @@ const skillGroups: SkillGroup[] = [
   },
   {
     name: "AI Development",
-    skills: ["Cursor", "LM Studio", "Google Antigravity", "Windsurf", "Devin"],
+    skills: ["Claude Code", "Cursor", "LM Studio", "Google Antigravity", "Windsurf"],
   },
   {
     name: "Other",
-    skills: ["Segment", "Recurly", "Unity", "ActionScript"],
+    skills: ["Segment", "Recurly"],
   },
 ];
 
 const pillClassName = "rounded-full border px-3 py-1 text-sm";
 
-export const SkillsSection = () => (
-  <div className="my-8 border-t border-neutral-800/80 pt-4">
-    <h2 className="mt-4 text-2xl md:text-3xl font-semibold tracking-tight text-neutral-50">Specializations</h2>
-    <ul className="mt-4 flex flex-wrap gap-2" aria-label="Key skills">
-      {keySkills.map(skill => (
-        <li
-          key={skill}
-          className={`${pillClassName} border-neutral-100 bg-neutral-100 font-medium text-neutral-900`}
-        >
-          {skill}
-        </li>
-      ))}
-    </ul>
-    <div className="mt-6 space-y-4">
-      {skillGroups.map(group => (
-        <div key={group.name}>
-          <h3 className="text-sm font-medium text-neutral-400">{group.name}</h3>
-          <ul className="mt-2 flex flex-wrap gap-2">
-            {group.skills.map(skill => (
-              <li
-                key={skill}
-                className={`${pillClassName} border-neutral-800 bg-neutral-900/60 text-neutral-300`}
-              >
-                {skill}
-              </li>
+export const SkillsSection = () => {
+  const [expanded, setExpanded] = useState(false);
+  const groupsId = useId();
+
+  return (
+    <div className="my-8 border-t border-neutral-800/80 pt-4">
+      <h2 className="mt-4 text-2xl md:text-3xl font-semibold tracking-tight text-neutral-50">Specializations</h2>
+      <ul className="mt-4 flex flex-wrap gap-2" aria-label="Key skills">
+        {keySkills.map(skill => (
+          <li
+            key={skill}
+            className={`${pillClassName} border-neutral-100 bg-neutral-100 font-medium text-neutral-900`}
+          >
+            {skill}
+          </li>
+        ))}
+      </ul>
+      <div
+        id={groupsId}
+        inert={!expanded}
+        className={`grid transition-[grid-template-rows] duration-300 ease-out ${expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+      >
+        <div className="overflow-hidden">
+          <div className="space-y-4 pt-6">
+            {skillGroups.map(group => (
+              <div key={group.name}>
+                <h3 className="text-sm font-medium text-neutral-400">{group.name}</h3>
+                <ul className="mt-2 flex flex-wrap gap-2">
+                  {group.skills.map(skill => (
+                    <li
+                      key={skill}
+                      className={`${pillClassName} border-neutral-800 bg-neutral-900/60 text-neutral-300`}
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
-      ))}
+      </div>
+      <button
+        type="button"
+        onClick={() => setExpanded(value => !value)}
+        aria-expanded={expanded}
+        aria-controls={groupsId}
+        aria-label={expanded ? "Show fewer skills" : "Show all skills"}
+        className="group relative mt-6 flex h-8 w-full cursor-pointer items-center justify-center"
+      >
+        <span className="absolute inset-x-0 top-1/2 border-t border-neutral-800 transition-colors group-hover:border-neutral-600" aria-hidden="true" />
+        <span className="relative flex h-8 w-8 items-center justify-center rounded-full border border-neutral-800 bg-neutral-950 text-neutral-400 transition-colors group-hover:border-neutral-600 group-hover:text-neutral-100 group-focus-visible:border-neutral-400">
+          <ChevronDown
+            className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+            aria-hidden="true"
+          />
+        </span>
+      </button>
     </div>
-  </div>
-);
+  );
+};
