@@ -15,7 +15,7 @@ export const HeroText = () => (
       <img
           src={portrait}
           alt="Portrait of Andrew Brough"
-          className="h-32 w-32 rounded-full md:hidden"
+          className="h-32 w-32 rounded-full border-3 border-neutral-800/80 md:hidden"
         />
     </div>
     <p className="mt-5 text-neutral-200">
