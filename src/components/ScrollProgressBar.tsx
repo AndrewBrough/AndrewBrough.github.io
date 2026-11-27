@@ -40,8 +40,15 @@ export const ScrollProgressBar = () => {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-0 z-50 h-[5px] bg-white" aria-hidden="true">
-      <div ref={fillRef} className="h-full w-full origin-left scale-x-0 bg-neutral-700" />
+    <div className="pointer-events-none fixed inset-x-0 top-0 z-50 h-[2px] bg-white" aria-hidden="true">
+      {/* Starts empty via inline style: Tailwind v4's scale-x-* utilities set the
+          separate `scale` property, which would multiply with this transform
+          and keep the fill at zero. */}
+      <div
+        ref={fillRef}
+        className="h-full w-full origin-left bg-primary"
+        style={{ transform: "scaleX(0)" }}
+      />
     </div>
   );
 };
