@@ -40,7 +40,7 @@ export const HeroText = () => (
       </span>
     </div>
     <p className="mt-4 text-sm text-neutral-500">
-      Off the clock: so many rock concerts, my home lab and a black cat who
+      Off the clock: rock concerts, my home lab and a black cat who
       supervises Claude while I'm off having fun.
     </p>
   </div>

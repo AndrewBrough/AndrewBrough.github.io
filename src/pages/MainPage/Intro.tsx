@@ -1,5 +1,6 @@
 import { ExperienceSection } from "./ExperienceSection";
 import { EducationSection } from "./EducationSection";
+import { Footer } from "./Footer";
 import { HobbiesSection } from "./HobbiesSection";
 import { HobbyProjectsSection } from "./HobbyProjectsSection";
 import { HeroActions } from "./HeroActions";
@@ -22,6 +23,7 @@ export const Intro = () => {
             <ExperienceSection />
             <EducationSection />
             <HobbiesSection />
+            <Footer />
           </div>
       </div>
     </section>
