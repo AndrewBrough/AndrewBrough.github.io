@@ -138,8 +138,8 @@ export const SkillsSection = () => {
         aria-label={expanded ? "Show fewer skills" : "Show all skills"}
         className="group relative mt-6 flex h-8 w-full cursor-pointer items-center justify-center"
       >
-        <span className="absolute inset-x-0 top-1/2 border-t border-neutral-800 transition-colors group-hover:border-neutral-600" aria-hidden="true" />
-        <span className="relative flex h-8 w-8 items-center justify-center rounded-full border border-neutral-800 bg-neutral-950 text-neutral-400 transition-colors group-hover:border-neutral-600 group-hover:text-neutral-100 group-focus-visible:border-neutral-400">
+        <span className="absolute inset-x-0 top-1/2 border-t border-neutral-800 group-hover:border-primary" aria-hidden="true" />
+        <span className="relative flex h-8 w-8 items-center justify-center rounded-full border border-neutral-800 bg-neutral-950 text-neutral-400 transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-neutral-100 group-focus-visible:border-neutral-400">
           <ChevronDown
             className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
             aria-hidden="true"
