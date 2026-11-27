@@ -3,7 +3,8 @@ import { useId, useState } from "react";
 
 type SkillGroup = {
   name: string;
-  skills: string[];
+  primary: string[];
+  secondary: string[];
 };
 
 const keySkills: string[] = [
@@ -15,29 +16,25 @@ const keySkills: string[] = [
   "React",
   "Node.js",
   "Next.js",
-  "Ruby on Rails",
   "GitLab CI/CD",
-  "Unity",
 ];
+
+const secondaryKeySkills: string[] = ["Docker", "Unity", "Ruby on Rails"];
 
 const skillGroups: SkillGroup[] = [
   {
     name: "Frontend",
-    skills: [
-      "SPA",
-      "PWA",
+    primary: ["SPA App Development", "Vite", "TanStack", "Apollo"],
+    secondary: [
       "HTML",
       "CSS",
       "JavaScript",
       "Angular",
       "Vue",
       "Webpack",
-      "Vite",
       "SWC",
       "React Compiler",
-      "Apollo",
       "GraphQL",
-      "TanStack",
       "Zustand",
       "Storybook",
       "jQuery",
@@ -46,12 +43,12 @@ const skillGroups: SkillGroup[] = [
   },
   {
     name: "Backend",
-    skills: [
+    primary: ["PHP", "C#"],
+    secondary: [
       "REST API Development",
+      "GraphQL",
       "Python",
-      "PHP",
       "Java",
-      "C#",
       "MySQL",
       "PostgreSQL",
       "NoSQL",
@@ -61,51 +58,49 @@ const skillGroups: SkillGroup[] = [
   },
   {
     name: "Testing",
-    skills: [
-      "Jest",
-      "React Testing Library",
-      "Cypress",
-      "Playwright",
-      "Pytest",
-      "Mock Service Worker",
-      "Selenium",
-      "BrowserStack",
-      "Enzyme",
-    ],
+    primary: ["Jest", "React Testing Library", "Playwright"],
+    secondary: ["Cypress", "Pytest", "Mock Service Worker", "Selenium", "BrowserStack"],
   },
   {
     name: "DevOps",
-    skills: ["Docker", "Kubernetes", "Netlify", "Git Flow", "Jenkins"],
+    primary: ["Docker", "Netlify"],
+    secondary: ["Next.js", "Kubernetes", "Git Flow", "Jenkins"],
   },
   {
     name: "UX & Design",
-    skills: ["Figma", "Sketch", "Adobe Suite"],
+    primary: ["Figma", "Adobe Suite"],
+    secondary: ["Sketch"],
   },
   {
     name: "Process & Tools",
-    skills: [
-      "SCRUM",
-      "Agile",
-      "Waterfall",
-      "Product Board",
-      "Jira",
-      "Confluence",
-      "GitLab Issues",
-      "Trello",
-      "Notion",
-    ],
+    primary: ["Agile", "Jira", "GitLab Issues", "Notion"],
+    secondary: ["SCRUM", "Waterfall", "Product Board", "Confluence", "Trello", "Segment", "Recurly"],
   },
   {
     name: "AI Development",
-    skills: ["Claude Code", "Cursor", "LM Studio", "Google Antigravity", "Windsurf"],
-  },
-  {
-    name: "Other",
-    skills: ["Segment", "Recurly"],
+    primary: ["Claude Code"],
+    secondary: ["Cursor", "LM Studio", "Google Antigravity", "Windsurf"],
   },
 ];
 
 const pillClassName = "rounded-full border px-3 py-1 text-sm";
+const primaryPillClassName = `${pillClassName} border-neutral-100 bg-neutral-100 font-medium text-neutral-900`;
+const secondaryPillClassName = `${pillClassName} border-neutral-800 bg-neutral-900/60 text-neutral-300`;
+
+const SkillPills = ({ primary, secondary }: { primary: string[]; secondary: string[] }) => (
+  <>
+    {primary.map(skill => (
+      <li key={skill} className={primaryPillClassName}>
+        {skill}
+      </li>
+    ))}
+    {secondary.map(skill => (
+      <li key={skill} className={secondaryPillClassName}>
+        {skill}
+      </li>
+    ))}
+  </>
+);
 
 export const SkillsSection = () => {
   const [expanded, setExpanded] = useState(false);
@@ -115,14 +110,7 @@ export const SkillsSection = () => {
     <div className="my-8 border-t border-neutral-800/80 pt-4">
       <h2 className="mt-4 text-2xl md:text-3xl font-semibold tracking-tight text-neutral-50">Specializations</h2>
       <ul className="mt-4 flex flex-wrap gap-2" aria-label="Key skills">
-        {keySkills.map(skill => (
-          <li
-            key={skill}
-            className={`${pillClassName} border-neutral-100 bg-neutral-100 font-medium text-neutral-900`}
-          >
-            {skill}
-          </li>
-        ))}
+        <SkillPills primary={keySkills} secondary={secondaryKeySkills} />
       </ul>
       <div
         id={groupsId}
@@ -135,14 +123,7 @@ export const SkillsSection = () => {
               <div key={group.name}>
                 <h3 className="text-sm font-medium text-neutral-400">{group.name}</h3>
                 <ul className="mt-2 flex flex-wrap gap-2">
-                  {group.skills.map(skill => (
-                    <li
-                      key={skill}
-                      className={`${pillClassName} border-neutral-800 bg-neutral-900/60 text-neutral-300`}
-                    >
-                      {skill}
-                    </li>
-                  ))}
+                  <SkillPills primary={group.primary} secondary={group.secondary} />
                 </ul>
               </div>
             ))}
