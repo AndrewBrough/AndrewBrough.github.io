@@ -41,7 +41,7 @@ const ProjectLinks = ({ project }: { project: HobbyProject }) => {
 };
 
 export const HobbyProjectsSection = () => (
-  <div id="projects" className="my-8 border-t border-neutral-800/80 pt-4">
+  <div id="projects" className="mb-8">
     <h2 className="mt-4 text-2xl md:text-3xl font-semibold tracking-tight text-neutral-50">Hobby Projects</h2>
     <ul className="mt-4 space-y-3">
       {hobbyProjects.map(project => (
