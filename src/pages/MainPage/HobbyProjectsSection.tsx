@@ -3,7 +3,7 @@ import { type HobbyProject, hobbyProjects } from "./hobbyProjects";
 
 const pillBase = "inline-flex items-center gap-1.5 border px-3 py-1 text-sm transition-colors";
 const namePill = `${pillBase} border-neutral-100 bg-neutral-100 font-medium text-neutral-900`;
-const demoPill = `${pillBase} border-neutral-800 bg-neutral-900/60 text-neutral-300 hover:bg-neutral-800`;
+const demoPill = `${pillBase} border-neutral-800 bg-neutral-900/60 text-neutral-300 hover:bg-primary`;
 
 const ProjectPill = ({ project }: { project: HobbyProject }) => {
   const { name, repoUrl, demoUrl } = project;
